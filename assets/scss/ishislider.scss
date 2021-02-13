@@ -1,0 +1,122 @@
+#ishislider {
+	overflow: hidden;
+	position: relative;
+	@media (min-width: 1199px) {/* If media is above 1200 */
+		&:after {
+			content: '';
+			width: 100%;
+			height: 120px;
+			background: url(../icons/slider-pattern.png) no-repeat center;
+			position: absolute;
+			left: 0;
+			right: 0;
+			text-align: center;
+			bottom: 0px;
+			z-index: 1;
+		}
+	}
+	.owl-nav{
+		margin: 0;
+		position: unset;
+		@media (max-width: 767px) {
+			/* If media is below 768 */
+			display: none;
+		}
+		.owl-prev, .owl-next {
+			@media (max-width: 991px) {
+				/* If media is below 992 */
+				top: 44%;
+			}
+			position: absolute;
+			top: 45%;
+			border-radius: 50%;
+			background-color: $brand-third;
+			border: 1px solid $brand-third;
+			padding: 7px;
+			margin: 4px;
+			left: 70px;
+			right: auto;
+			width: 38px;
+			height: 38px;
+			overflow: hidden;
+			opacity: 0;
+			-webkit-transition: all 0.3s ease-in-out;
+			-moz-transition: all 0.3s ease-in-out;
+			-o-transition: all 0.3s ease-in-out;
+			transition: all 0.3s ease-in-out;
+			@media (max-width: 991px) {
+				/* If media is below 768 */
+				top: 38%;
+			}
+			&:hover {
+				background-color: $brand-secondary;
+				border-color:$brand-secondary;
+				i {
+					&:after {
+						color: $light-color;
+					}
+				}
+			}
+			i {
+				line-height: 0;
+				&:before {
+					line-height: 0;
+				}
+				&:after {
+					display: none;
+				}
+			}
+		}
+		.owl-next {
+			right: 70px;
+			left: auto;
+		}
+	}
+	.owl-dots {
+		position: absolute;
+		bottom: 15px;
+		right: 0;
+		left: 0;
+		margin: 0 auto;
+		text-align: center;
+		-webkit-transition: all 0.3s;
+		-moz-transition: all 0.3s;
+		-o-transition: all 0.3s;
+		transition: all 0.3s;
+		.owl-dot {
+			display: inline-block;
+			vertical-align: middle;
+			outline: none;
+			span {
+				border-radius: 50%;
+				width: 12px;
+				height: 12px;
+				border: 1px solid $brand-third;
+				background: $brand-third;
+				margin: 0 5px;
+				display: block;
+			}
+			&.active {
+				span {
+					background: $brand-secondary;
+					border-color: $brand-secondary;
+				}
+			}
+		}
+	}
+	&:hover {
+		&:before {
+			width: 100%;
+		}
+		.owl-nav{
+			.owl-prev, .owl-next{
+				opacity: 1;
+				left: 50px;
+			}
+			.owl-next {
+				right: 50px;
+				left: auto;
+			}
+		}
+	}
+}

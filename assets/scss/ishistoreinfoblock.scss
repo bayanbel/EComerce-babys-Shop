@@ -1,0 +1,45 @@
+#ishistoreinfo{
+	@media (min-width: 992px) {
+		/* If media is above 991 */
+		max-width: 29%;
+	}
+	@media (max-width: 991px) {
+		/* If media is below 992 */
+		margin-bottom: 25px;
+	}
+	display: block;
+	overflow: hidden;
+	.store-logo {
+		@media (min-width: 1200px) {
+			/* If media is above 1200 */
+			width: 90%;
+		}
+		display:block;
+		margin-bottom: 15px;
+		text-align: center;
+		img {
+			max-width: 100%;
+		}
+		&:after {
+			display: none;
+		}
+	}
+	.store-description {
+		margin-bottom: 0;
+		@media (max-width: 991px) {
+			/* If media is below 992 */
+			text-align: center;
+		}		
+		@media (min-width: 1200px) {
+			/* If media is above 1200 */
+			width: 90%;
+		}
+		p {
+			line-height: 24px;
+			font-size: 14px;
+			font-family: $primary-font;
+			margin-bottom: 0;
+			color: #777777;
+		}
+	}
+}

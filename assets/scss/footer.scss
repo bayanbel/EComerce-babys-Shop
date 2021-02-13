@@ -1,0 +1,327 @@
+/* footer */
+#footer {
+  margin-top: 30px;
+  background: #e9f6f8 url(../images/footer-bg.jpg) bottom no-repeat;
+  color: #777777;
+  clear: both;
+  line-height: 1.25em;
+  position: relative;
+  &:before {
+    content: '';
+    height: 11px;
+    width: 100%;
+    background: url(../icons/footer-pattern.png) center;
+    position: absolute;
+    top: 0;
+  }
+  hr {
+    border-top: none;
+    border-bottom: 1px solid #666;
+  }
+  section {
+    margin: 0;
+  }
+  .footer-aftertext { 
+    @media (max-width: 991px) {
+      /* If media is below 992 */
+      text-align: center;
+    }
+    color: #777777;
+    margin-bottom: 0;
+    padding: 9px 0;
+    line-height: 20px;
+    text-align: left;
+    font-family: $primary-font;
+    a {
+      line-height: 20px;
+      color: #777777;
+      display: inline-block;
+      vertical-align: middle;
+      font-family: $primary-font;
+      &:hover {
+        color: #777777;
+      }
+    }
+  }
+  #slidetop {
+    background: $brand-third none repeat scroll 0 0;
+    box-shadow: 0 0 10px 4px rgba(255, 255, 255, 0.1);
+    color: transparent;
+    border-radius: 50%;
+    bottom: 20px;
+    cursor: pointer;
+    height: 40px;
+    overflow: hidden;
+    padding: 6px;
+    position: fixed;
+    right: 20px;
+    text-align: center;
+    width: 40px;
+    z-index: 99;
+    display: none;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+    &:before {
+      content: "\f106";
+      display: inline-block;
+      color: $light-color;
+      font-family: FontAwesome;
+      font-size: 26px;
+      left: 0;
+      position: absolute;
+      right: 0;
+      top: 10px;
+    }
+    &:after {
+      display: none;
+    }
+    &:hover {
+      background-color: $brand-secondary;
+    }
+  }
+  a {
+    font-family: $primary-font;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    font-size: 14px;
+    color: #777777;
+    line-height: 18px;
+    text-decoration: none;
+    position: relative;
+    display: block;
+    overflow: hidden;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+    &:hover {
+      color: $brand-secondary;
+    }
+  }
+  h5,
+  .h3 {
+    @media (max-width: 1199px) {
+      /* If media is below 1200 */
+      font-size: 20px;
+    }
+    @media (max-width: 991px) {
+      /* If media is below 992 */
+      font-size: 18px;
+    }
+    margin: 0 0 20px 0;
+    color: $brand-third;
+    text-transform: uppercase;
+    font-size: 22px;
+    font-weight: 500;
+    cursor: pointer;
+    font-family: $secondary-font;
+  }
+  li {
+    margin-bottom: 15px;
+    text-decoration: none;
+    list-style: none;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  #_mobile_storeinfo{
+    &.block-contact{
+      @media (min-width: 992px) {/* If media is above 991 */
+        display: none;
+      }
+    }
+  }
+  .block-contact {    
+    @media (max-width: 991px) {
+      /* If media is below 992 */
+      text-align: left;
+    }
+    display: block;
+    overflow: hidden;
+    .block {
+      @media (min-width: 992px) {
+        /* If media is below 992 */
+        padding: 0;
+      }
+      @media (max-width: 991px) {
+        /* If media is below 992 */
+        float: left;
+      }
+      margin-bottom: 15px;
+      letter-spacing: 0.5px;
+      font-size: 14px;
+      font-weight: 400;
+      &:last-child {
+        margin-bottom: 0;
+      }
+      .icon {
+        @media (max-width: 991px) {
+          /* If media is below 992 */
+          text-align: center;
+          margin: 0 auto;
+          display: block;
+          font-size: 23px;
+          border: 1px solid #777777;
+          border-radius: 50%;
+          width: 45px;
+          height: 45px;
+          line-height: 50px;
+          margin-bottom: 5px;
+        }
+        content: "";
+        color: #777777;
+        font-family: FontAwesome;
+        font-size: 18px;
+        height: 24px;
+        width: 24px;
+        position: relative;
+        top: 0px;
+        line-height: 29px;
+        vertical-align: middle;
+        display: inline-block;
+        text-align: center;
+      }
+      &.email {
+        .icon {          
+          @media (max-width: 991px) {
+            /* If media is below 992 */
+            font-size: 16px;
+            line-height: 55px;
+          }
+          font-size: 14px;
+        }
+      }
+      &.address {
+        .content {
+          @media (max-width: 991px) {
+            /* If media is below 992 */
+            width: 100%;
+            text-align: center;
+          }
+          @media (max-width: 575px) {
+            width: 100%;
+            text-align: center;
+          }
+          width: 83%;
+        }
+      }
+      .content {
+        @media screen and (min-width: 768px) and (max-width: 991px) {
+          /* If media is between 768 and 991 */
+          display: block;
+          padding: 0;
+          margin-top: 10px;
+          text-align: center;
+          width: 100% !important;
+        }
+        @media (max-width: 991px) {
+          /* If media is below 992 */
+          width: 100%;
+          text-align: center;
+        }
+        @media (max-width: 767px) {
+          /* If media is below 768 */
+          padding: 0;
+        }
+        @media (max-width: 575px) {
+          width: 100%;
+          text-align: center;
+        }
+        line-height: 25px;
+        overflow: hidden;
+        display: inline-block;
+        vertical-align: middle;
+        padding-left: 5px;
+        font-family: $primary-font;
+        color: #777777;
+        a {
+          &:after {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+  .links {
+    @media (min-width: 992px) {
+      /* If media is above 991 */
+      max-width: 23%;
+    }
+    @media (max-width: 991px) {/* If media is above 991 */
+      text-align: left;
+    }
+    display: block;
+    overflow: hidden;
+    position: relative;
+  }
+  .footer-before {
+    @media (max-width: 992px) {/* If media is above 991 */
+      display: block;
+      padding: 40px 0 15px;
+    }
+    display: block;
+    overflow: hidden;
+    position: relative;
+    padding: 60px 0 20px;
+  }
+  .footer-container {
+    @media (max-width: 991px) {/* If media is above 991 */
+      padding: 50px 0 0px;
+      text-align: center;
+    }
+    padding: 100px 0 30px;
+    display: block;
+    overflow: hidden;
+    position: relative;
+  }
+  .footer-dropdown {
+    margin-top: 10px;
+    margin-bottom: 0;
+  }
+  @media (max-width: 992px) {/* If media is above 991 */
+    .footer-block {
+      margin-bottom: 15px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+  @media (min-width: 1200px) {/* If media is above 1199 */
+    .collapse {
+      display: inherit;
+    }
+    .footer-dropdown {
+      margin-top: 0;
+    }
+  }
+  @media (max-width: 543px) {/* If media is below 544 */
+    .footer-block {
+      margin-bottom: 15px;
+    }
+  }
+  @media (min-width: 992px) {/* If media is above 991 */
+    .collapse {
+      display: inherit;
+    }
+  }
+  .footer-title {
+    .navbar-toggler {
+      top: 0;
+      right: 0;
+      color: $brand-third;
+    }
+  }
+}
+.footer-after {
+  @media (max-width: 991px) {/* If media is above 991 */
+    padding: 0 0 50px;
+  }
+  padding: 0 0 100px;
+  >.container {
+    @media (max-width: 767px) {/* If media is below 768 */
+      padding: 15px 15px 30px;
+    }
+  }
+}

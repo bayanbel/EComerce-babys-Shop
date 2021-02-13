@@ -1,0 +1,66 @@
+.owl-nav{
+	text-align: center;
+	-webkit-transition: all 0.4s;
+	-moz-transition: all 0.4s;
+	-o-transition: all 0.4s;
+	transition: all 0.4s;
+	.owl-prev, .owl-next{
+		@media (min-width: 768px) {
+			position: absolute;
+		    left: -3px;
+		    top: 45%;
+		}
+		display: inline-block;
+		border: 1px solid $brand-secondary;
+		background-color: $brand-secondary;
+    	border-radius: 50%;
+    	margin:0 4px;
+    	width: 35px;
+		height: 35px;
+    	outline: none;
+    	-webkit-transition: all 0.3s ease 0s;
+	    -moz-transition: all 0.3s ease 0s;
+	    -ms-transition: all 0.3s ease 0s;
+	    -o-transition: all 0.3s ease 0s;
+	    transition: all 0.3s ease 0s;
+    	&:hover{
+    		background-color: $brand-third;
+    		border-color: $brand-third;
+    		i{
+    			&:after{
+    				color: $light-color;
+    			}
+    		}
+    	}
+		i{
+			line-height: 24px;
+			&:after{
+				color: #fff;
+			    content: "\E314";
+			    display: inline-block;
+			    font-family: "material icons";
+			    font-size: 18px;
+			    color: $light-color;
+			}
+			&:before {
+				color: $light-color;
+			    display: inline-block;
+			    vertical-align: middle;
+			    font-family: "FontAwesome";
+			    font-size: 14px;
+			    line-height: 33px;
+			}
+		}
+	}
+	.owl-next{
+		@media (min-width: 768px) {
+			right: -3px;
+			left: auto;
+		}
+		i{
+			&:after{
+				content:"\E315";
+			}
+		}
+	}
+}

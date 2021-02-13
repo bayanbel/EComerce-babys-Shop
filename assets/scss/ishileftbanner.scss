@@ -1,0 +1,35 @@
+#ishileftbanners {
+	margin-bottom: 30px;
+	@media (max-width: 991px) {/* If media is below 992 */
+		text-align: center;
+		margin-bottom: 15px;
+	}
+	.image-container {
+		position:relative;
+		margin-bottom: 30px;
+		&:last-child {
+			margin-bottom: 0;
+		}
+		@media (max-width: 991px) {/* If media is below 992 */
+			display: inline-block;
+			vertical-align: middle;
+		}
+		a{
+			display: block;
+			position: relative;
+			overflow: hidden;
+			-webkit-transition: all 0.5s;
+			-moz-transition: all 0.5s;
+			-o-transition: all 0.5s;
+			transition: all 0.5s;
+			img{
+				width: 100%;
+				max-width: 100%;
+				-webkit-transition: all 0.5s;
+				-moz-transition: all 0.5s;
+				-o-transition: all 0.5s;
+				transition: all 0.5s;
+			}
+		}			
+	}
+}

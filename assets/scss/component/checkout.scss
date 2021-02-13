@@ -1,0 +1,116 @@
+.card {
+  clear: both;
+  background-color: #fff;
+  border: 1px solid #eaeaea;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 0;
+  display: block;
+}
+section.checkout-step {
+  .step-title {
+    text-transform: uppercase;
+    cursor: pointer;
+    font-size: 16px;
+    margin-bottom: 0;
+    font-weight: 600;
+    color: #232323;
+  }
+  .form-control-label {
+    text-align: left;
+  }
+  .form-group {
+    align-items: center;
+  }
+  form#customer-form {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+  }  
+  @media (min-width: 1200px) {/* If media is above 1199 */
+    .collapse {
+      display: none;
+      &.show, &.in {
+        display: inherit;
+      }
+    }
+  }
+  @media (min-width: 992px) {/* If media is above 991 */
+    .collapse {
+      display: none;
+      &.show, &.in {
+        display: inherit;
+      }
+    }
+  }
+  .content {
+    @media (max-width: 543px) {/* If media is below 544 */
+      padding: 0;
+    }
+    padding: 0 2.313rem;
+    margin-top: 10px;
+  }
+  .form-footer {
+    text-align: center;
+    margin: 8px 0;
+  }
+  .payment-options {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    label {
+      display: inline-block;
+    }
+    .custom-radio {
+      margin-right: 10px;
+    }
+    .payment-option {
+      margin-bottom: 0.5rem;
+    }
+  }
+  .payment-form {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+  }
+  .step-number {
+    display: inline-block;
+    padding: 0.625rem;
+  }
+  .continue {
+    margin-top: 10px;
+  }
+}
+#checkout-payment-step {
+  .center-block {
+      white-space: normal;
+  }
+}
+#cart-summary-product-list {
+  .media {
+    margin-bottom: 20px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+    .media-left {
+      img {
+        max-width: 90px;
+        margin-right: 10px;
+      }
+    }
+    .product-price {
+      font-size: 16px;
+      color: $brand-secondary;
+    }  
+  }  
+}
+.card-block-summary-details{
+    padding-bottom: 15px;
+}
+
+.cart-summary-totals{
+    padding-top: 15px;
+}

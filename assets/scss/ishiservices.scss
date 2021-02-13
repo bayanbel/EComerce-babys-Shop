@@ -1,0 +1,104 @@
+.ishiservicesblock{
+	@media (max-width: 991px) {
+		/* If media is below 992 */
+		padding: 30px 15px 30px;
+		margin-bottom: 0;
+	}
+	@media (max-width: 767px) {
+		/* If media is below 768 */
+		padding: 0 0px 25px;
+		margin-bottom: 0;
+	}
+	padding: 37px 0;
+	position: relative;
+	text-align: left;
+	overflow: hidden;
+	display: block;
+	.ishiservices{
+		display: block;
+		position: relative;
+		text-align: center;
+		margin: 0 auto;
+		.services{
+			@media (max-width: 991px) {
+				/* If media is below 992 */
+				display: block;
+				text-align: center;
+				margin: 0 auto;
+			}
+			.service-img{	
+				width: 55px;
+				height: 55px;
+				background-position: center;
+                overflow: hidden;
+				display: inline-block;
+				vertical-align: middle;
+				text-align: center;
+				position: relative;
+				transition: all 400ms;
+				-webkit-transition: all 400ms;
+				-moz-transition: all 400ms;
+				-ms-transition: all 400ms;
+				-o-transition: all 400ms;
+			}
+			.service-block{
+				display: inline-block;
+				vertical-align: middle;
+				text-align: left;
+				margin-top: 6px;
+				padding-left: 15px;
+				width: 75%;
+				@media (max-width: 767px) {/* If media is below 768 */
+					text-align: center;
+					padding-left: 0;
+					margin-top: 5px;
+					display: block;
+					width: 100%;
+				}
+				@media (max-width: 543px) {/* If media is below 544 */
+					display: inline-block;
+				    text-align: left;
+				    padding-left: 5px;
+				    width: auto;
+				}
+				.service-title{	
+					@media (max-width: 991px) {
+						/* If media is below 992 */
+						color: $brand-primary;
+					}
+				    font-size: 16px;
+				    font-weight: 500;
+				    text-transform: capitalize;
+				    color: $brand-primary;
+				    margin-bottom: 5px;
+				    font-family: $secondary-font;
+				    transition: all 400ms ease;
+					-webkit-transition: all 400ms ease;
+					-moz-transition: all 400ms ease;
+					-ms-transition: all 400ms ease;
+					-o-transition: all 400ms ease;
+				}
+				.service-desc {
+					@media (max-width: 1200px) {
+						/* If media is below 1200 */
+						font-size: 12px;
+					}
+					color: #777777;
+					font-weight: 400;
+					font-size: 14px;
+				}
+			}
+			&:hover {
+				.service-img {
+					transform: rotateY(360deg);
+				}
+				.service-block {
+					.service-title {
+						color: $brand-third;
+						letter-spacing: 1px;
+					}
+				}
+			}
+		}
+	}    
+}

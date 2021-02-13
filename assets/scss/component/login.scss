@@ -1,0 +1,34 @@
+.login-page {
+	padding: 20px;
+	.block-title {
+		margin-bottom: 30px;
+		text-align: center;
+		.title {
+			color: $brand-secondary;
+			font-size: 30px;
+			font-weight: 500;
+			font-family: $primary-font;
+			margin-bottom: 0;
+		}
+	}
+	.login-form {
+	    margin-top: 15px;
+	}
+	.text-center{
+		text-align: center;
+	}
+	form {
+		box-shadow: 2px 2px 8px 0 rgba(0,0,0,.2);
+		max-width: 640px;
+		margin: 0 auto;
+		padding: 30px;
+		.form-control-label {
+		    text-align: right;
+		    line-height: 38px;
+		    @media (max-width: 767px) {/* If media is below 768 */
+		    	text-align: left;
+		    	line-height: 20px;
+		    }
+		}
+	}
+}

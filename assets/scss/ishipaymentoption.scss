@@ -1,0 +1,26 @@
+.paymentlogo-container{
+	@media (max-width: 991px) {/* If media is below 992 */
+	  text-align: center;
+	  display: block;
+	  float: none;
+    }
+	text-align: right;
+	float: right;
+	img {
+		@media (max-width: 767px) {/* If media is below 768 */
+			margin: 2px 1px;
+		}
+		border-radius: 0;
+		cursor: pointer;
+		width: 45px;
+		margin: 5px 1px;
+		box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.1);
+		-webkit-transition: all 0.25s;
+		-moz-transition: all 0.25s;
+		-o-transition: all 0.25s;
+		transition: all 0.25s;
+		@media (max-width: 350px) {/* If media is below 351 */
+			width: 43px;
+		}
+	}
+}

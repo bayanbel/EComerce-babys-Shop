@@ -1,0 +1,29 @@
+#ishimanufacturerblock {
+	.home-title {
+		display: none;
+	}
+	.item {
+		text-align: center;
+		img {
+			width: auto;
+			max-width: 100%;
+			display: inline-block;
+			-webkit-transition: all 0.4s;
+			-moz-transition: all 0.4s;
+			-o-transition: all 0.4s;
+			transition: all 0.4s;
+			cursor: pointer;
+			cursor: -moz-pointer;
+			cursor: -webkit-pointer;
+		}
+		&:hover {
+			img {
+				transform: scale(0.9);
+				-moz-transform: scale(0.9);
+				-webkit-transform: scale(0.9);
+				-o-transform: scale(0.9);
+				-ms-transform: scale(0.9);
+			}
+		}
+	}
+}

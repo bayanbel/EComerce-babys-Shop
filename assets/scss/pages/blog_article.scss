@@ -1,0 +1,206 @@
+#content-wrapper{
+	#smartblogcat{
+		margin-bottom: 30px !important;
+		.sdsarticleCat{
+			@media (max-width: 991px) {/* If media is below 992 */
+				text-align: center;
+			}
+			overflow: hidden;
+			margin-bottom: 30px;
+			text-align: left;
+			&:last-child{
+				> div{
+					margin-bottom:0;
+				}
+			}
+			.articleContent{
+				margin-bottom: 0;
+				img {
+					max-width: 100%;
+				}
+			}
+			.smartblog-desc {
+				@media (max-width: 991px) {/* If media is below 992 */
+					padding: 15px;
+				}
+				@media (max-width: 1199px) {
+					top: 0;
+				}
+				position: relative;
+				top: 18px;
+				.author {
+					@media (max-width: 991px) {/* If media is below 992 */
+						float: none;
+					}
+					float: left;
+				}
+				.sdsarticleHeader{
+					@media (max-width: 1199px) {
+						margin: 10px 0;
+					}
+					margin: 15px 0;
+					p{
+						margin-bottom: 0;
+						a{
+							font-size: 20px;
+							text-transform: uppercase;
+							color: $brand-primary;
+							font-weight: 400;
+							text-decoration: none;
+							line-height: 24px;
+							@media (max-width: 543px) {/* If media is below 544 */
+								font-size: 17px;
+							}
+						}
+					}
+				}
+				.blogdetail{
+					@media (max-width: 1199px) {
+						margin-bottom: 10px;
+					}
+					margin-bottom: 15px;
+					display: block;
+					span{
+						font-size: 15px;
+						display: inline-block;
+						vertical-align: middle;
+						margin-right: 5px;
+						position: relative;
+						text-transform: capitalize;
+						color: $brand-secondary;
+						line-height: 25px;
+						@media (max-width: 543px) {/* If media is below 544 */
+							font-size: 14px;
+						}
+						a,i{
+							color: $brand-secondary;
+						}
+					}
+				}
+				.sdsarticle-des{
+					@media (max-width: 1199px) {
+						margin-bottom: 10px;
+					}
+					display: block;
+					margin-bottom: 15px;
+					color: #666;
+					line-height: 24px;
+				}
+				.sdsreadMore{
+					a{
+						text-decoration: none;
+						display: inline-block;
+						vertical-align: middle;
+						-webkit-transition: all 0.5s;
+						-moz-transition: all 0.5s;
+						-o-transition: all 0.5s;
+						transition: all 0.5s;
+					}
+				}
+			}
+		}
+	}
+}
+
+
+#right-column, #left-column {
+section {
+    margin-bottom: 15px;
+    padding: 0;
+    border: 1px solid #eee;
+}
+#blogarticle-container {
+	margin-top: 20px;
+}
+.description {
+	position: relative;
+	margin-bottom: 20px;
+	padding: 0 10px 20px;
+	border-bottom: 1px dotted rgba(0,0,0,0.1);
+	&:last-child {
+		margin-bottom: 0;
+		border-bottom: 0;
+	}
+	.blog-artical {
+		float: left;
+		display: inline-block;
+		margin-right: 8px;
+		img {
+			max-width:80px;
+		}
+	}
+	.blog-desc {
+		display: inline-block;
+		width: 60%;
+		@media screen and (min-width: 992px) and (max-width: 1199px) {/* If media is between 992 and 1199 */
+			width: 50%;
+		}
+		p {
+			color: #151515;
+			font-size: 15px;
+			margin-bottom: 10px;
+			white-space: nowrap;
+			overflow: hidden;
+			text-overflow: ellipsis;
+		}
+		.smart-desc {
+			font-size: 12px;
+			color: #666666;
+			font-style: italic;
+			.meta-date {
+				font-size: 12px;
+				color: #666666;
+				font-style: italic;
+				display: inline-block;
+				vertical-align: middle;
+			}
+			.meta-likes {
+				display: inline-block;
+				vertical-align: middle;
+				font-size: 12px;
+				color: #666666;
+				font-style: italic;
+				i {
+					span {
+						color: #666666;
+					}
+					color: #F27482;
+					font-size: 12px;
+					&:hover {
+						color: #ED4B5C;
+					}
+				}
+			}
+		}				
+	}
+}
+.popular-blog {
+	#tag-container {
+		margin: 18px 10px;
+	}
+	ul {
+		li {
+			a{
+				color: $brand-primary;
+			}
+			display: inline-block;
+			vertical-align: middle;
+			padding: 6px 15px;
+			border: 1px solid #eee;
+			margin: 4px 2px;
+			cursor: poiner;
+			-webkit-transition: all 0.25s;
+	    	-moz-transition: all 0.25s;
+	    	-o-transition: all 0.25s;
+	    	transition: all 0.25s;
+			&:hover {
+				a {
+					color: $light-color;
+				}
+				background-color: $brand-secondary;
+				border-color: $brand-secondary;
+			}
+		}
+	}
+}
+}	

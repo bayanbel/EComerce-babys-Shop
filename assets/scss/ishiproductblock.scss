@@ -1,0 +1,182 @@
+/* Ishi ProductBlock */
+.ishiproductsblock {
+  display: block;
+  position: relative;
+  #ishiproductstab {
+    @media (max-width: 767px) {
+      /* If media is below 768 */
+      float: none;
+    }
+    position: relative;
+    border: 0;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 0;
+    display: block;
+    .nav-item {
+      @media (max-width: 543px) {
+        /* If media is below 544 */
+        display: block;
+        margin-bottom: 8px;
+        margin-right: 0;
+        text-align: center;
+      }
+
+      &:last-child {
+        &:before,
+        &:after {
+          display: none;
+        }
+      }
+
+      display: inline-block;
+      vertical-align: middle;
+      margin: 0 15px 10px;
+      float: none;
+      position: relative;
+
+      &:before {
+        @media (max-width: 543px) {
+          /* If media is below 544 */
+          display: none;
+        }
+
+        content: '';
+        height: 1px;
+        width: 50px;
+        background: #dddddd;
+        position: absolute;
+        right: -42px;
+        top: 53%;
+      }
+
+      &:after {
+        @media (max-width: 543px) {
+          /* If media is below 544 */
+          display: none;
+        }
+
+        content: '';
+        height: 8px;
+        width: 8px;
+        background: #dddddd;
+        border-radius: 50%;
+        position: absolute;
+        top: 44%;
+        right: -21px;
+      }
+
+      .nav-link {
+        @media (max-width: 543px) {
+          /* If media is below 544 */
+          padding: 3px 20px;
+          font-size: 14px;
+          display: inline-block;
+        }
+
+        font-size: 15px;
+        font-weight: 400;
+        background: transparent none repeat scroll 0 0;
+        border: 0;
+        color: $brand-primary;
+        margin: 0;
+        outline: medium none;
+        padding: 10px 18px;
+        line-height: 1.1;
+        border-radius: 20px;
+        position: relative;
+        text-transform: capitalize;
+        transition: all 400ms ease-in-out 0s;
+        -webkit-transition: all 400ms ease-in-out 0s;
+        -moz-transition: all 400ms ease-in-out 0s;
+        -o-transition: all 400ms ease-in-out 0s;
+
+        &.active,
+        &:hover {
+          color: $brand-third;
+        }
+      }
+
+      &.active {
+        .nav-link {
+          color: $brand-third;
+        }
+      }
+    }
+  }
+  .tab-content {
+    display: block;
+    position: relative;
+    @media (max-width: 543px) {/* If media is below 544 */
+      padding: 0 5px;
+    }
+    .block_content{
+      @media (max-width: 543px) {/* If media is below 544 */
+        padding: 0;
+      }
+    }
+  }
+  .banner_productblock {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    padding: 10px 15px;
+    a {
+      border-radius: 20px;
+      display: block;
+      position: relative;
+      overflow: hidden;
+      -webkit-transition: all 0.5s;
+      -moz-transition: all 0.5s;
+      -o-transition: all 0.5s;
+      transition: all 0.5s;
+    }
+    img{
+      max-width: 100%;
+      width: 100%;
+      border-radius: 20px;
+      -webkit-transform-style: unset;
+      transform-style: unset;
+      -webkit-transition: all 0.5s;
+      -moz-transition: all 0.5s;
+      -o-transition: all 0.5s;
+      transition: all 0.5s;     
+    }
+  }
+  .owl-nav {
+    @media (max-width: 543px) {
+      /* If media is below 544 */
+      margin-top: 10px;
+    }
+    .owl-prev, .owl-next {
+      i {
+        &:after {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+#ishispecialproducts{
+  #ishispecialproducts-carousel{
+    @media (max-width: 543px) {/* If media is below 544 */
+      padding: 0 5px;
+    }
+  }
+}
+
+#ishi-products-category{
+  .product-thumb{
+    .caption{
+      @media screen and (min-width: 992px) and (max-width: 1199px) {/* If media is between 992 and 1199 */
+        padding: 16px 15px;
+      }
+    }
+    .button-group{
+      @media screen and (min-width: 992px) and (max-width: 1199px) {/* If media is between 992 and 1199 */
+        bottom: 60px;
+      }
+    }
+  } 
+}

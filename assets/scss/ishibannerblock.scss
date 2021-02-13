@@ -1,0 +1,48 @@
+.ishibannerblock{
+	text-align: center;
+	display: block;
+	overflow: hidden;
+	position: relative;
+	.bannerblock{
+		display: inline-block;
+		vertical-align: middle;
+		padding: 0;
+		@media (max-width: 633px) {/* If media is below 600 */
+			width: 100%;
+		}
+		img{
+			max-width: 100%;
+			width: 100%;
+			-webkit-transform-style: unset;
+			transform-style: unset;
+			-webkit-transition: all 0.5s;
+	        -moz-transition: all 0.5s;
+	        -o-transition: all 0.5s;
+	        transition: all 0.5s;			
+		}
+		a{
+			display: block;
+			position: relative;
+			overflow: hidden;
+			-webkit-transition: all 0.5s;
+		    -moz-transition: all 0.5s;
+		    -o-transition: all 0.5s;
+		    transition: all 0.5s;
+		}
+	}	
+	&.ishigalleryblock {
+		text-align: inherit;
+		.bannerblock {
+			float: left;
+			@media (max-width: 633px) {
+				/* If media is below 600 */
+				width: 50%;
+			}
+		}
+		a {
+			&:after, &:before {
+				background: rgba(255,111,105,0.3);
+			}
+		}
+	}
+}

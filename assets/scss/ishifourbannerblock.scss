@@ -1,0 +1,48 @@
+.ishifourbannerblock{
+	text-align: center;
+	display: block;
+	overflow: hidden;
+    position: relative;
+	.bannerblock{	
+		@media (max-width: 443px) {
+			/* If media is below 444 */
+			width: 100%;
+		}
+		@media (min-width: 768px) {
+			/* If media is above 767 */
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
+		display: inline-block;
+		vertical-align: middle;	
+		margin-bottom: 30px;
+		img{
+			max-width: 100%;
+			width: 100%;
+			border-radius: 15px;
+			-ms-transition: all 0.5s;
+			-webkit-transition: all 0.5s;
+	        -moz-transition: all 0.5s;
+	        -o-transition: all 0.5s;
+	        transition: all 0.5s;			
+		}
+		a{
+			display: inline-block;
+			vertical-align: middle;
+			position: relative;
+			overflow: hidden;
+			border-radius: 15px;
+			-ms-transition: all 0.5s;
+			-webkit-transition: all 0.5s;
+		    -moz-transition: all 0.5s;
+		    -o-transition: all 0.5s;
+		    transition: all 0.5s;
+		}
+	}	
+	.bannerright {
+		.bannerblock {
+			margin-bottom: 0;
+		}
+	}
+}

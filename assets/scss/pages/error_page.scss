@@ -1,0 +1,32 @@
+.error_page {
+	text-align: center;
+	padding: 100px 0;
+	h1,.title {
+		font-size: 100px;
+		font-family: 'Marcellus', serif;
+		color: $brand-secondary;
+		@media (max-width: 543px) {/* If media is below 544 */
+			font-size: 60px;
+		}
+		span {
+			border: 3px solid $brand-secondary;
+			background: $light-color;
+			color: $brand-secondary;
+			border-radius: 50%;
+			font-size: 50px;
+			padding: 0px 25px;
+			position: relative;			
+			top: -15px;
+			margin-right: 15px;
+			font-family: "Poppins", sans-serif;
+			@media (max-width: 543px) {/* If media is below 544 */
+				font-size: 30px;
+				padding: 0 15px;
+				top: -9px;
+			}
+		}
+	}
+	.error-text{
+		margin-bottom: 30px;
+	}
+}
